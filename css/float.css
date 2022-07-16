@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+@font-face {
+
+    font-family: 'Arial-Black';
+    src: url(/fontes/Arial\ Black.ttf) format ('truetype');
+    font-weight: bolder;
+}
+
+@font-face {
+
+    font-family: 'Paladino';
+    src: url(/fontes/Palatino\ Linotype.ttf) format ('truetype');
+
+}
+
+:root {
+
+    --fonte: 'Arial-Black'; 
+    --fonte-google: 'Bakbak One', cursive;
+    --fonte-local-p: 'Paladino';
+}
+
+body {
+
+    background-color: #eef;
+}
+
+#container {
+
+    width: 820px;
+    margin: 0 auto;
+
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4em;
+    text-align: justify;
+    color: #909;
+    font-family: var(--fonte-local-p);
+
+}
+
+header >nav ul {
+    background-color: #ebc6f9;
+    overflow: hidden; /* Overflow-hidden, para a lista não transbordar quando utilizar uma tela menor */
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+header >nav >ul li {
+
+    float: left;  /* as listas ficaram alinhadas usano o float left, com uma margin de 4em */
+    margin-right: 4em;
+    color: #74269d;
+}
+
+header >nav >ul a {
+    font-size: .875em;
+}
+
+/* ARTICLE e ASIDE */
+
+article, aside {
+
+    float: left;
+}
+
+article {
+    width: 570px;
+}
+
+article p img {
+
+    float: left;
+    margin-right: 10px;
+
+}
+
+article p {
+    font-family: var(--fonte-local-p);
+    margin-top: 20px;
+}
+
+h1, h2 {
+
+    color: navy;
+    font: 1.375em;
+    font-family: var(--fonte-google);
+}
+
+h1 {
+
+    text-transform: uppercase;
+}
+
+h2 {
+
+    font-size: 1.15em;
+    font-variant: small-caps;
+    margin-bottom: -6px;
+}
+
+em {
+
+    font-weight: bold;
+}
+
+a:link {
+
+    color: #74269d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+
+    color: #909;
+    text-decoration: none;
+}
+
+a:hover {
+
+    color: #c3f;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* SIDEBAR */
+
+aside {
+
+    background-color: #dde5ff;
+    margin-left: 20px;
+    margin-top: 72px;
+    padding: 0 15px;
+    width: 200px;
+}
+
+aside h1 {
+
+    font-size: 0.95em;
+    padding-top: 8px;
+    text-transform: none;
+}
+
+aside ul {
+
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+aside p {
+
+    font-size: 0.8em;
+    color: #909;
+    text-align: justify;
+    line-height: 1.6em;
+}
+
+aside li {
+
+    font-size: 0.8em;
+    color: #909;
+    line-height: 1.4em;
+}
+
+footer {
+
+    background-color: #dde5ff;
+    clear: both;
+}
+
+footer p {
+
+    font-size: 1em;
+    margin: 0px;
+}
