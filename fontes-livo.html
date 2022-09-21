@@ -14,6 +14,7 @@
 
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -59,8 +60,9 @@ p {
 
         color: blueviolet;
         display: block;
-        border-bottom: 1px solid black;
+        text-decoration: underline;
         text-align: center;
+        font-size: .6em;
         
     }
 
@@ -68,6 +70,15 @@ p {
 
         color: red;
 
+     }
+
+     div#box {
+
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        background-image: linear-gradient(to left, yellow, blueviolet, rgba(0, 0, 0, 0.151), green);
+        margin-top: 50px;
      }
 
 </style>
@@ -119,7 +130,9 @@ p {
 
     </ul>
 
-
+            <div id="box">
+                caixa
+            </div>
 
 </body>
 </html>
