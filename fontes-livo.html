@@ -10,15 +10,116 @@
 
 <style>
 
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+p {
+
+    margin-bottom: 50px;
+    padding: 20px;
+}
     h1 {
 
-        text-shadow: 2px 2px 0 rgba(255, 255, 255, 1), 6px 6px 0 rgba(50, 50, 50, .25);
+        font-size: 1em;
+        padding: 20px;
+        text-shadow: 2px 2px 0 rgba(255, 255, 255, 1), 6px 6px 0 rgba(184, 49, 49, 0.25);
     }
+
+
+    ul.pai > li {
+
+        color: aqua;
+        cursor: pointer;
+    }
+
+    ul.sobrinhos > li {
+
+        color: brown;
+    }
+
+    ul.sobrinhos > li {
+        display: none;
+        
+    }
+
+   ul.pai > li.filhos:hover > ul.sobrinhos > li{
+
+        color: blueviolet;
+        display: block;
+        border-bottom: 1px solid black;
+        text-align: center;
+        
+    }
+
+     p:not(.livro){
+
+        color: red;
+
+     }
+
 </style>
 <body>
 
     <h1>Testando fontes web google</h1>
 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero veniam, cumque ad aliquid quidem magnam. Voluptatum commodi nesciunt, sed dolores reiciendis dignissimos accusantium, provident libero iste laudantium, ad perspiciatis quibusdam.</p>
+    <p class="livro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero veniam, cumque ad aliquid quidem magnam. Voluptatum commodi nesciunt, sed dolores reiciendis dignissimos accusantium, provident libero iste laudantium, ad perspiciatis quibusdam.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus dolor dolore sapiente. Quia non ad error, explicabo eaque facilis provident incidunt, rem dolores temporibus recusandae, libero dolor autem totam quas!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic magnam doloribus eos dignissimos illo labore vero maiores, est enim sit ipsam cum impedit architecto dicta quia facere quo nulla rem.</p>
+
+    <ul class="pai">
+
+        <li class="filhos">1 - Home</li>
+
+        <li class="filhos">2 - Cursos
+
+            <ul class="sobrinhos">
+                <li>JavaScript</li>
+                <li>HTML5 & CSS3</li>
+                <li>Python</li>
+            </ul>
+
+        </li>
+
+        <li class="filhos">3 - Times
+
+            <ul class="sobrinhos">
+                <li>Corinthians</li>
+                <li>Palmeiras</li>
+                <li>São Paulo</li>
+                <li>Santos</li>
+            </ul>
+
+        </li>
+
+        <li class="filhos">4 - Noticias</li>
+
+        <li class="filhos">5 - Redes Sociais
+
+            <ul class="sobrinhos">
+                <li>FaceBook</li>
+                <li>Instagran</li>
+                <li>Twitter</li>
+                <li>TwitchTv</li>
+            </ul>
+
+        </li>
+
+    </ul>
+
+
+
 </body>
 </html>
