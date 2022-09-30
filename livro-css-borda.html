@@ -64,6 +64,19 @@ ul > li {
     padding-bottom: 20px;
 }
 
+ul > li:hover {
+
+    list-style-image: url(../estudando-o-livro/img/pino-de-localizacao.png);
+}
+
+div#lista {
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+}
+
     </style>
 </head>
 <body>
@@ -81,14 +94,16 @@ ul > li {
     <br>
     <br>
 
-    <ul>
-        <li>link1</li>
-        <li>link2</li>
-        <li>link3</li>
-        <li class="none">link4</li>
-        <li>link5</li>
-        <li>link6</li>
-        <li>link7</li>
-    </ul>
+    <div id="lista">
+        <ul>
+            <li>link1</li>
+            <li>link2</li>
+            <li>link3</li>
+            <li class="none">link4</li>
+            <li>link5</li>
+            <li>link6</li>
+            <li>link7</li>
+        </ul>
+    </div>
 </body>
 </html>
