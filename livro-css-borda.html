@@ -8,6 +8,17 @@
 
     <style>
 
+        @font-face {
+
+            font-family: gothic;
+            src: url(../estudando-o-livro/fontes/LeagueGothic-1.601/static/OTF/LeagueGothic-Regular.otf) format('opentype');
+        }
+
+        @font-face {
+            font-family: gotic;
+            src: url(../estudando-o-livro/fontes/LeagueGothic-1.601/static/TTF/LeagueGothic-Italic.ttf) format('truetype');
+        }
+
         div {
 
             border-radius: 10px;
@@ -17,12 +28,63 @@
             width: 400px;
             height: 400px;
         }
+
+        h1 {
+
+            text-align: center;
+            padding-bottom: 50px;
+            font-size: 5em;
+            font-family: gotic;
+            text-transform: capitalize;
+            text-shadow: -4px 4px 3px #999999, 1px -1px 2px #000;
+            word-spacing: 5px;
+            letter-spacing: 5px;
+        }
+
+        p {
+            text-indent: 25px;
+            text-align: justify;
+        }
+
+        p::first-letter {
+
+            color: red;
+            font-size: 5em;
+        }
+
+        .teste::first-line {
+
+            color: blue;
+        }
+ul > li.none {
+
+    list-style: none;
+}
     </style>
 </head>
 <body>
+
+    <h1>rsa Pc Gamer!!!!!!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quas, consequatur laudantium ex repudiandae cupiditate cum nihil aliquid vero totam dicta unde aliquam enim vitae, corporis rem. Architecto, doloribus temporibus.</p>
+    <p class="teste">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus accusamus quod minus ullam odio dolore corrupti neque esse non iusto quibusdam, quos incidunt nisi ipsa? Molestiae unde voluptate exercitationem quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, beatae sunt, dolorum modi laudantium, facere deserunt molestiae excepturi quibusdam vel magni dolores reiciendis sint error illum. Natus sed inventore cum!</p>
     <div>
 
 
     </div>
+
+    <a href="../estudando-o-livro/livro-domine-a-web.html" target="_blank">NEXT</a>
+
+    <br>
+    <br>
+
+    <ul>
+        <li>link1</li>
+        <li>link2</li>
+        <li>link3</li>
+        <li class="none">link4</li>
+        <li>link5</li>
+        <li>link6</li>
+        <li>link7</li>
+    </ul>
 </body>
 </html>
