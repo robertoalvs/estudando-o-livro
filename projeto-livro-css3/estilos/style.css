@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 500px) and (orientation: portrait){
+    
+    div#container {
+
+        width: 500px;
+    }
+    
+    nav > ul {
+    
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 20px;
+    }
+
+    nav >ul >li {
+
+        display: inline-block;
+        color: white;
+    
+    }
+
+    h1 {
+
+        color: black;
+    }
+}
