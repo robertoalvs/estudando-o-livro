@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 500px) and (orientation: portrait){
+@media screen and (min-width: 500px) and (orientation: portrait){
     
     div#container {
 
         width: 500px;
+        height: 100vh;
     }
 
     header {
@@ -16,16 +17,17 @@
 
         display: block;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 5px;
+        left: 25px;
     }
 
     nav > ul {
     
-        display: block;
+        display: flex;
         position: absolute;
         top: 85px;
-        left: 70px;
+        left: 71px;
+        gap: 10px;
     }
 
     nav >ul >li {
@@ -38,7 +40,54 @@
         color: white;
         display: inline-block;
         position: absolute;
-        top: 0;
-        left: 310px;
+        top: 29px;
+        left: 135px;
+    }
+}
+
+
+
+@media screen and (min-width: 600px) and (orientation: portrait){
+    
+    div#container {
+
+        width: 600px;
+        height: 100vh;
+    }
+
+    header {
+
+        position: relative;
+    }
+    
+    .cubo {
+
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 25px;
+    }
+
+    nav > ul {
+    
+        display: flex;
+        position: absolute;
+        top: 85px;
+        left: 71px;
+        gap: 10px;
+    }
+
+    nav >ul >li {
+
+        color: white;
+    }
+
+    h1 {
+
+        color: white;
+        display: inline-block;
+        position: absolute;
+        top: 29px;
+        left: 135px;
     }
 }

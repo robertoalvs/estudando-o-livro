@@ -12,6 +12,7 @@ div#container {
     width: 950px;
     height: 100vh;
     background-color: rgba(176, 176, 109, 0.317);
+    margin-top: 10px;
 }
 
 header {
@@ -19,7 +20,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: flex-start;
     align-items: center;
     width: 100%;
     background-image: url(../img/fundo-verde-1.jpg);
@@ -30,13 +30,18 @@ header {
 
 .cubo {
 
-    margin-left: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    margin-right: -90px;
+    margin-left: 50px;
+
 }
 
 h1 {
 
-    margin-left: -200px;
-    padding: 20px;
+    margin-right: 115px;
     color: white;
 }
 
@@ -44,7 +49,8 @@ nav > ul {
 
     display: flex;
     gap: 20px;
-    margin-right: 15px;
+    margin-right: 27px;
+   
 }
 
 nav >ul >li {
@@ -56,3 +62,15 @@ nav >ul >li {
     padding: 5px 7px 5px 7px;
 }
 
+div.borda {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border: 3px solid black;
+    width: 95%;
+    height: 120px;
+    margin: auto;
+}
