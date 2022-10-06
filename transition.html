@@ -79,7 +79,42 @@
             height: 200px;
         }
 
+        .checked {
 
+            width: 50px;
+            height: 50px;
+            transition: transform 0.5s;
+        }
+
+        .checked:checked {
+
+            transform: rotateY(360deg);
+        }
+
+        .radio {
+
+            width: 50px;
+            height: 50px;
+            transition: transform 1s;
+        }
+
+        .radio:checked {
+
+            transform: scale(1.4);
+        }
+
+        .text {
+
+            width: 300px;
+            height: 50px;
+            text-align: center;
+            transition: transform 1s;
+        }
+
+        .text:focus {
+
+            transform: scaleY(0.5) scaleX(0.7) rotateZ(20deg);
+        }
     </style>
 </head>
 <body>
@@ -97,5 +132,29 @@
     <h2>DELAY</h2>
 
     <div class="item pink delay">Pink</div>
+
+    <hr>
+
+    <h2>Checked</h2>
+
+    <div>
+        <label for="ichecked"></label>
+        <input class="checked" type="checkbox" name="check" id="ichecked">
+    </div>
+
+    <div>
+        <label for="iradio"></label>
+        <input class="radio" type="radio" name="radio" id="iradio">
+        <input class="radio" type="radio" name="radio" id="iradio">
+    </div>
+
+    <hr>
+
+    <h2>Focus</h2>
+
+    <div>
+        <label for="itext"></label>
+        <input class="text" type="text" name="text" id="itext">
+    </div>
 </body>
 </html>
