@@ -8,17 +8,94 @@
 
     <style>
 
-        div {
+        .pai {
 
-            width: 400px;
-            height: 400px;
-            background-color: blue;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            gap: 70px;
         }
+        .back {
+
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            transition: background-color 4s;
+            font-size: 3em;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .back:hover {
+
+            background-color: red;
+        }
+
+        .size {
+
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            transition: transform 0.5s;
+        }
+
+        .size:hover {
+
+            transform: scale(1.5);
+        }
+
+        .rotacao {
+
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transition: transform 0.5s;
+        }
+
+
+        .rotacao:hover {
+
+        transform: rotateZ(180deg);
+        }
+
+
+        .delay {
+
+         width: 100px;
+         height: 100px;
+         background-color: pink;
+         align-items: center;
+         display: flex;
+         justify-content: center;
+         transition: width 1s 1s, height 1s;
+
+        }
+
+        .delay:hover {
+
+            width: 200px;
+            height: 200px;
+        }
+
+
     </style>
 </head>
 <body>
     
+    <h1>HOVER</h1>
 
-    <div>Azul</div>
+    <div class="pai">
+        <div class="back">Azul</div>
+        <div class="size"></div>
+        <div class="rotacao"></div>
+    </div>
+
+    <hr>
+
+    <h2>DELAY</h2>
+
+    <div class="item pink delay">Pink</div>
 </body>
 </html>
