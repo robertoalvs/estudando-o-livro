@@ -31,6 +31,11 @@
             overflow: hidden;
         }
 
+        fieldset.address {
+
+            height: 265px;
+        }
+
         h2 {
 
             background-color: rgba(4, 4, 41, 0.747);
@@ -81,6 +86,12 @@
 
             height: 60px;
         }
+
+        div.zip {
+
+            margin-top: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -121,8 +132,47 @@
 
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="address">
+
                     <h2>ADDRESS</h2>
+
+                    <div class="nome sobrenome">
+
+                        <label for="end">Street Address:</label>
+                        <input type="text" name="endereco" id="end" required max="40">
+
+                        <br>
+
+                        <label for="city">City:</label>
+                        <input type="text" name="cidade" id="city" required max="20">
+
+                        <br>
+
+                        <label for="idselecao">State:</label required>
+                        <select class="select" name="selecao" id="idselecao">
+
+                            <optgroup label="Sudeste">
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="MG">Minas Gerais</option>
+                            </optgroup>
+
+                            <optgroup label="Sul">
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="SC">Santa Catarina</option>
+                            </optgroup>
+
+                        </select>
+
+                        <br>
+
+                        <div class="zip">
+                            <label for="izip">ZIP Code:</label>
+                            <input type="text" name="zip" id="izip" required maxlength="10" placeholder="Digite seu cep">
+                        </div>
+
+                    </div>
+                    
                 </fieldset>
             
                 <fieldset>
