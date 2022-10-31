@@ -91,13 +91,13 @@ $email = clear_user_input($email);
 $first_name = clear_user_input($first_name);
 
 /* Create header that puts email in From box along with name in parentheses and sends Bcc to alternate address. Change yourmail@yourdomain.com to the Bcc email address you want to include. */
-$from='From: '. $email . "(" . $first_name . ")" . "\r\n" . 'Bcc: yourmail@yourdomain.com' . "\r\n";
+$from='From: '. $email . "(" . $first_name . ")" . "\r\n" . 'Bcc: robertoalvs@hotmail.com' . "\r\n";
 
 // Creates intelligible subject line that also shows me where it came from
 $subject = 'New Profile from Web Site';
 
 /* Sends mail to the address below with the form data submitted above. Replace yourmail@yourdomain.com with the email address to which you want the data sent. */
-mail ('yourmail@yourdomain.com', $subject, $body, $from);
+mail ('robertoalvs@hotmail.com', $subject, $body, $from);
 ?>
 
 <p>Obrigado pelas informações</p>
