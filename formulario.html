@@ -5,100 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário livro</title>
-    <style>
-        * {
-
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        #formulario {
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        fieldset {
-
-            width: 550px;
-            height: 300px;
-            background-color: #f1f1f1;
-            margin: 20px 0 20px;
-            border: none;
-            overflow: hidden;
-        }
-
-        fieldset.address {
-
-            height: 265px;
-        }
-
-        h2 {
-
-            background-color: rgba(4, 4, 41, 0.747);
-            color: white;
-            border-radius: 5px;
-            margin: 20px 15px 0 15px;
-            padding: 5px 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.616);
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.616);
-        }
-
-        label {
-
-            display: inline-block;
-	        padding: 3px 6px;
-	        text-align: right;
-	        width: 160px;
-	        
-        }
-
-        div.nome {
-
-            background-color: white;
-            margin: 15px 15px 0 15px;
-            padding: 20px 20px; 
-        }
-
-        input {
-
-            margin-bottom: 10px;
-            width: 250px;
-            height: 23px;
-        }
-        
-        .botao {
-
-            margin: 15px 0 0 15px;
-            width: 150px;
-            height: 30px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.616);
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.616);
-            background-color: rgba(4, 4, 41, 0.747);
-            border-radius: 5px;
-            color: white;
-        }
-        
-        fieldset.criar {
-
-            height: 60px;
-        }
-
-        div.zip {
-
-            margin-top: 10px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../estudando-o-livro/estilos/style.css">
 </head>
 <body>
 
     <div id="formulario">
 
-        <form action="../estudando-o-livro/emailform.php" method="post">
+        <form action="../estudando-o-livro/emailform.php" method="post" enctype="multipart/form-data">
     
                 <fieldset>
 
@@ -121,12 +34,12 @@
 
                         <br>
 
-                        <label for="pass">Password:</label>
+                        <label for="pass">Senha:</label>
                         <input type="password" name="password" id="pass" minlength="8" required>
 
                         <br>
 
-                        <label for="repass">Re-enter-Password:</label>
+                        <label for="repass">Repetir a Senha:</label>
                         <input type="password" name="password1" id="repass" required minlength="8">
                     </div>
 
@@ -136,19 +49,19 @@
 
                     <h2>ADDRESS</h2>
 
-                    <div class="nome sobrenome">
+                    <div class="nome sobrenome ">
 
-                        <label for="end">Street Address:</label>
+                        <label for="end">Endereço:</label>
                         <input type="text" name="endereco" id="end" required max="40">
 
                         <br>
 
-                        <label for="city">City:</label>
+                        <label for="city">Cidate:</label>
                         <input type="text" name="cidade" id="city" required max="20">
 
                         <br>
 
-                        <label for="idselecao">State:</label required>
+                        <label for="idselecao">Estado:</label required>
                         <select class="select" name="selecao" id="idselecao">
 
                             <optgroup label="Sudeste">
@@ -167,8 +80,8 @@
                         <br>
 
                         <div class="zip">
-                            <label for="izip">ZIP Code:</label>
-                            <input type="text" name="zip" id="izip" required maxlength="10" placeholder="Digite seu cep">
+                            <label for="izip">Cep:</label>
+                            <input class="cep" type="text" name="zip" id="izip" required maxlength="10" placeholder="Digite seu cep">
                         </div>
 
                     </div>
@@ -177,6 +90,13 @@
             
                 <fieldset>
                     <h2>PUBLIC PROFILE</h2>
+                    
+                    <div class="nome file">
+
+                        <label for="ipic">Carregar Foto:</label>
+                        <input type="file" name="picture" id="ipic">
+                    </div>
+
                 </fieldset>
 
                 <fieldset>
