@@ -10,6 +10,19 @@
 
 <style>
 
+
+@font-face {
+
+font-family: 'renegade';
+src: url(../estudando-o-livro/fontes/19th_century_renegade/19th_Century_Renegade.otf) format('opentype');
+}
+
+:root {
+
+--fonte-local: 'renegade', cursive;
+}
+
+
 * {
 
     margin: 0;
@@ -72,6 +85,11 @@ p {
 
      }
 
+     p {
+
+        font-family: var(--fonte-local);
+     }
+
      div#box {
 
         width: 200px;
@@ -88,7 +106,7 @@ p {
 
     <p class="livro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero veniam, cumque ad aliquid quidem magnam. Voluptatum commodi nesciunt, sed dolores reiciendis dignissimos accusantium, provident libero iste laudantium, ad perspiciatis quibusdam.</p>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus dolor dolore sapiente. Quia non ad error, explicabo eaque facilis provident incidunt, rem dolores temporibus recusandae, libero dolor autem totam quas!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic magnam doloribus eos dignissimos illo labore vero maiores, est enim sit ipsam cum impedit architecto dicta quia facere quo nulla rem.</p>
+    <p>1 2 3 4 5 6 7 8 10 20Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic magnam doloribus eos dignissimos illo labore vero maiores, est enim sit ipsam cum impedit architecto dicta quia facere quo nulla rem.</p>
 
     <ul class="pai">
 
