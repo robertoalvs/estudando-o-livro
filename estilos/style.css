@@ -30,6 +30,11 @@ fieldset.address {
     height: 265px;
 }
 
+fieldset#profile {
+
+    height: 450px;
+}
+
 h2 {
 
     background-color: rgba(4, 4, 41, 0.747);
@@ -55,6 +60,10 @@ div.nome {
     background-color: white;
     margin: 15px 15px 0 15px;
     padding: 20px 20px; 
+}
+div.file {
+
+    height: 360px;
 }
 
 input {
@@ -89,4 +98,15 @@ div.zip {
 .cep {
 
     width: 150px;
+}
+
+p.profile-paragrafo {
+    
+    padding-left: 165px;
+    margin-bottom: 10px;
+    font-size: 0.75em;
+}
+
+.titulo-caixa {
+
 }

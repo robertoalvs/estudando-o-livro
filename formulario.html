@@ -88,13 +88,28 @@
                     
                 </fieldset>
             
-                <fieldset>
+                <fieldset id="profile">
+
                     <h2>PUBLIC PROFILE</h2>
                     
                     <div class="nome file">
 
                         <label for="ipic">Carregar Foto:</label>
                         <input type="file" name="picture" id="ipic">
+
+                        <p class="profile-paragrafo">Tamanho Máximo de 700k. JPG, GIF, PNG.</p>
+
+                        <label for="iuser">User Name:</label>
+                        <input type="text" name="user" id="iuser">
+
+                        <label for="iweb">Web:</label>
+                        <input type="url" name="web" id="iweb">
+
+                        <p class="profile-paragrafo">Se você tiver um site ou um blog, digite aqui.</p>
+
+                        <label class="titulo-caixa" for="icaixa">Bio:</label>
+                        <textarea class="caixa-texto" name="caixa" id="icaixa" cols="30" rows="10" maxlength="1000"></textarea>
+
                     </div>
 
                 </fieldset>
