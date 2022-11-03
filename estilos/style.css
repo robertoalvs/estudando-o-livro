@@ -32,7 +32,7 @@ fieldset.address {
 
 fieldset#profile {
 
-    height: 450px;
+    height: 480px;
 }
 
 h2 {
@@ -61,9 +61,12 @@ div.nome {
     margin: 15px 15px 0 15px;
     padding: 20px 20px; 
 }
+
 div.file {
 
-    height: 360px;
+    height: 400px;
+    
+    
 }
 
 input {
@@ -107,6 +110,24 @@ p.profile-paragrafo {
     font-size: 0.75em;
 }
 
-.titulo-caixa {
+.label-radio, .input-radio{
 
+    width: auto;
+    margin-bottom: 5px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.label-radio {
+
+    margin-left: 20px;
+}
+
+div.gen {
+
+    background: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
 }
