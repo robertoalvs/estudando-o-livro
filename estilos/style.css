@@ -152,3 +152,27 @@ div.radio {
 }
 
 /* Checkbox ===== */
+
+
+.div.check-box {
+
+    
+}
+
+.label-check {
+
+    width: 400px;
+    vertical-align: top;
+    font-size: 0.85em;
+    text-align: left;
+}
+
+.input-check {
+
+    width: 15px;
+}
+
+.check-set {
+
+    height: 200px;
+}
