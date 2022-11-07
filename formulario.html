@@ -88,19 +88,68 @@
                     
                 </fieldset>
             
-                <fieldset>
+                <fieldset id="profile">
+
                     <h2>PUBLIC PROFILE</h2>
                     
                     <div class="nome file">
 
                         <label for="ipic">Carregar Foto:</label>
                         <input type="file" name="picture" id="ipic">
+
+                        <p class="profile-paragrafo">Tamanho Máximo de 700k. JPG, GIF, PNG.</p>
+
+                        <label for="iuser">User Name:</label>
+                        <input type="text" name="user" id="iuser">
+
+                        <label for="iweb">Web:</label>
+                        <input type="url" name="web" id="iweb">
+
+                        <p class="profile-paragrafo">Se você tiver um site ou um blog, digite aqui.</p>
+                                              
+                        <label class="text-label" for="icaixa-texto">Bio:</label>
+                        <textarea name="caixa-texto" id="icaixa-texto" cols="30" rows="10" maxlength="1000" ></textarea>
+                        
+                        
+
+                        <div class="radio">
+
+                            <label>Sexo:</label>
+
+                            <input class="input-gen" type="radio" name="gen" id="igen-masculino" value="homem">
+                            
+                            <label class="label-radio" for="igen-masculino">Masculino</label>
+
+                            <input class="input-gen" type="radio" name="gen" id="igen-feminino" value="feminino">
+
+                            <label class="label-radio" for="igen-feminino">Feminino</label>
+
+                        </div>
+
                     </div>
 
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="check-set">
+
                     <h2>EMAILS</h2>
+
+                    <div class="nome check-box">
+                        
+                        
+                        <input class="input-check" type="checkbox" name="check" id="icheck" value="icheck">
+            
+                        <label class="label-check" for="icheck">
+                            Enviar um e-mail com mensagens de outros usuários.</label>
+
+                        <br>
+
+                        <input class="input-check" type="checkbox" name="check1" id="icheck1" value="icheck1">
+                        
+                        <label class="label-check" for="icheck1">Enviar um e-mail com promoções ocasionais sobre nossos outros produtos.</label>
+
+                    </div>
+
                 </fieldset>
 
                 <fieldset class="criar">
