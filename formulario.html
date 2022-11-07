@@ -106,29 +106,46 @@
                         <input type="url" name="web" id="iweb">
 
                         <p class="profile-paragrafo">Se você tiver um site ou um blog, digite aqui.</p>
+                                              
+                        <label class="text-label" for="icaixa-texto">Bio:</label>
+                        <textarea name="caixa-texto" id="icaixa-texto" cols="30" rows="10" maxlength="1000" ></textarea>
+                        
+                        
 
-                        <label class="titulo-caixa" for="icaixa">Bio:</label>
-                        <textarea class="caixa-texto" name="caixa" id="icaixa" cols="30" rows="10" maxlength="1000"></textarea>
+                        <div class="radio">
 
-                            <div class="gen">
+                            <label>Sexo:</label>
 
-                                <label>Gênero:</label>
+                            <input class="input-gen" type="radio" name="gen" id="igen-masculino" value="homem">
+                            
+                            <label class="label-radio" for="igen-masculino">Masculino</label>
 
-                                <label class="label-radio" for="igenero">Feminino:</label>
+                            <input class="input-gen" type="radio" name="gen" id="igen-feminino" value="feminino">
 
-                                <input class="input-radio" type="radio" name="genero" id="igenero" value="mulher">
+                            <label class="label-radio" for="igen-feminino">Feminino</label>
 
-                                <label  class="label-radio" for="igen">Masculino:</label>
-
-                                <input  class="input-radio" type="radio" name="genero" id="igen" value="Masculino">
-                            </div>
+                        </div>
 
                     </div>
 
                 </fieldset>
 
                 <fieldset>
+
                     <h2>EMAILS</h2>
+
+                    <div class="nome check-box">
+                        
+                        
+                        <input class="input-check" type="checkbox" name="check" id="icheck" value="icheck">
+            
+                        <label class="label-check" for="icheck">Enviar um e-mail com mensagens de outros usuários.</label>
+
+                        <input class="input-check" type="checkbox" name="check1" id="icheck1" value="icheck1">
+                        <label class="label-check" for="icheck1">Enviar um e-mail com promoções ocasionais sobre nossos outros produtos.</label>
+
+                    </div>
+
                 </fieldset>
 
                 <fieldset class="criar">
